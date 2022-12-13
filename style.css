@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./img/skiathos-bourtzi-shutterstock-2048x1152.jpg) no-repeat
+    center center fixed;
+  font-family: "Arial Narrow Bold", sans-serif;
+  line-height: 1.5em;
+  /* overflow: auto; */
+  height: 100vh;
+}
+.nav-container {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+.navbar ul {
+  list-style: none;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 50px 20px;
+}
+.navbar li a:hover {
+  text-shadow: 2px 2px 5px rgb(6, 147, 227);
+  font-size: 1.1em;
+}
+/* SECTION 1 */
+.content-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section p {
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+}
+/* SECTION 2 */
+.upper-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.upper-img {
+  width: 300px;
+}
+.content {
+  width: 800px;
+}
+.upper-content p {
+  text-align: center;
+}
+/* MIDDLE CONTENT */
+.middle-content {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  width: 40%;
+  height: 400px;
+  border: 1px solid black;
+  background-color: bisque;
+}
+.slideshow {
+  width: 40%;
+  height: 400px;
+  border: 1px solid black;
+  background-color: bisque;
+}
+/* FOOTER */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: bisque;
+}
+.logo-footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.social {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: bisque;
+}
+.boxes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+}
