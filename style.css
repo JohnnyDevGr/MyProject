@@ -18,6 +18,8 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 100px;
+  position: fixed;
+  top: 0;
 }
 .navbar ul {
   list-style: none;
@@ -126,4 +128,7 @@ section p {
   justify-content: flex-end;
   align-items: center;
   gap: 80px;
+}
+.megacontent{
+  margin-top: 100px;
 }
