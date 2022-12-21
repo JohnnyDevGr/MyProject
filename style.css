@@ -4,15 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./img/skiathos-bourtzi-shutterstock-2048x1152.jpg) no-repeat
-    center center fixed;
   font-family: "Arial Narrow Bold", sans-serif;
   line-height: 1.5em;
-  /* overflow: auto; */
+  display: block;
   height: 100vh;
 }
 .nav-container {
-  background-color: transparent;
+  background-color: rgb(2, 65, 123);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -28,6 +26,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 80px;
+  margin: -20px;
 }
 .navbar li a {
   display: block;
@@ -40,11 +39,13 @@ body {
   font-size: 1.1em;
 }
 /* SECTION 1 */
+
 .content-1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 section p {
   width: 80%;
   padding: 30px;
@@ -90,6 +91,7 @@ section p {
 }
 /* FOOTER */
 .footer {
+  background-color: rgb(2, 65, 123);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -129,6 +131,6 @@ section p {
   align-items: center;
   gap: 80px;
 }
-.megacontent{
+.megacontent {
   margin-top: 100px;
 }
