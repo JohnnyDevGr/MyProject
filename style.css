@@ -24,7 +24,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 80px;
-  margin: -20px;
+
 }
 .navbar li a {
   display: block;
@@ -168,9 +168,13 @@ input[type="submit"]:hover {
 }
 /*      PARALIES    */
 .cards {
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+
 }
 .card {
   flex: 0 0 200px;
@@ -192,6 +196,8 @@ input[type="submit"]:hover {
   width: 100%;
 }
 .cardcontent {
-  margin: 100px;
+  margin-top: 150px;
   width: 100%;
+ display: flex;
+ justify-content: center;
 }
