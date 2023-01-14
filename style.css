@@ -7,6 +7,7 @@ body {
   font-family: "Arial Narrow Bold", sans-serif;
   line-height: 1.5em;
   display: block;
+  overflow-x: hidden;
 }
 .nav-container {
   background-color: rgb(2, 65, 123);
@@ -38,8 +39,14 @@ body {
 }
 /* SECTION 1 */
 .megacontent {
-  margin-top: 80px;
-  background-image: url(./img/skiathos-bourtzi-shutterstock-2048x1152.jpg);
+  margin-top: 100px;
+}
+
+.photocontent{
+
+  width: 100vw;
+ height: 100vh;
+ background: url(./img/skiathos-bourtzi-shutterstock-2048x1152.jpg) no-repeat center center/cover; 
 }
 .content-1 {
   display: flex;
