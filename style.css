@@ -227,12 +227,13 @@ input[type="submit"]:hover {
   padding: 20px 20px 20px;
 }
 .card .text > button {
-  background: gray;
+  background: #007bff;
   border: none;
   color: white;
   margin-top: 30px;
   padding: 10px;
   width: 100%;
+  cursor: pointer;
 }
 .cardcontent {
   margin-top: 150px;
