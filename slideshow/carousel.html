@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="slideshow">
+      <img src="https://source.unsplash.com/random/nature" class="slides" />
+      <img src="https://source.unsplash.com/random/winter" class="slides" />
+      <img src="https://source.unsplash.com/random/cold" class="slides" />
+      <img src="https://source.unsplash.com/random/ice" class="slides" />
+      <img src="https://source.unsplash.com/random/snow" class="slides" />
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+      <button id="play" onclick="playSlide()">Play</button>
+      <button id="stop" onclick="stopSlide()">Stop</button>
+    </div>
+    <div id="indicator">
+      <span class="dot bg1" onclick="currentSlide(1)"></span>
+      <span class="dot bg2" onclick="currentSlide(2)"></span>
+      <span class="dot bg3" onclick="currentSlide(3)"></span>
+      <span class="dot bg4" onclick="currentSlide(4)"></span>
+      <span class="dot bg5" onclick="currentSlide(5)"></span>
+    </div>
+  </body>
+</html>
