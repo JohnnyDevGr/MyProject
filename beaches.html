@@ -10,170 +10,197 @@
   </head>
   <body>
     <header>
-      <div class="nav-container">
+      <div class="navbar">
         <div class="logo">
-          <!-- <h1>MY LOGO</h1> -->
-          <!-- <img src="./img/placeholder.com-logo1.png" alt="" width="200" /> -->
-          <a>Travel guide of Skiathos</a>
+          <img src="skiathos-logo.png" alt="Skiathos Logo" />
         </div>
-        <div class="navbar">
-          <ul>
-            <li>
-              <h2>
-                <a href="index.html">Αρχική</a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="beaches.html">Παραλίες</a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="destinations.html">Προορισμοί</a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="about.html">Σχετικά με μας</a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="contact.html">Επικοινωνία</a>
-              </h2>
-            </li>
-          </ul>
+        <div class="tabs">
+          <a class="tab active" href="./index.html">Index</a>
+          <a class="tab" href="./beaches.html">Beaches</a>
+          <a class="tab" href="./destinations.html">Destinations</a>
+          <a class="tab" href="./about.html">About Us</a>
+          <a class="tab" href="./contact.html">Contact</a>
         </div>
       </div>
     </header>
     <div class="beachcontainer">
-      <div class="slideshow">
+      <div id="slideshow">
+        <img src="https://source.unsplash.com/random/nature" class="slides" />
+        <img src="https://source.unsplash.com/random/winter" class="slides" />
+        <img src="https://source.unsplash.com/random/cold" class="slides" />
+        <img src="https://source.unsplash.com/random/ice" class="slides" />
+        <img src="https://source.unsplash.com/random/snow" class="slides" />
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <button id="play" onclick="playSlide()">Play</button>
+        <button id="stop" onclick="stopSlide()">Stop</button>
+      </div>
+      <div id="indicator">
+        <span class="dot bg1" onclick="currentSlide(1)"></span>
+        <span class="dot bg2" onclick="currentSlide(2)"></span>
+        <span class="dot bg3" onclick="currentSlide(3)"></span>
+        <span class="dot bg4" onclick="currentSlide(4)"></span>
+        <span class="dot bg5" onclick="currentSlide(5)"></span>
       </div>
     </div>
     <div class="cardcontent">
       <main class="cards">
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Seamlessly visualize quality</h3>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+            <p>
+              Collaboratively administrate empowered markets via plug-and-play
+              networks.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Completely Synergize</h3>
-            <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+            <p>
+              Dramatically engage seamlessly visualize quality intellectual
+              capital without superior collaboration and idea-sharing.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Dynamically Procrastinate</h3>
-            <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+            <p>
+              Completely synergize resource taxing relationships via premier
+              niche markets.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Best in class</h3>
-            <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+            <p>
+              Imagine jumping into that boat, and just letting it sail wherever
+              the wind takes you...
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Dynamically innovate supply chains</h3>
-            <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+            <p>
+              Holisticly predominate extensible testing procedures for reliable
+              supply chains.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
         <article class="card">
-          <img src="./img/image-placeholder.jpg" alt="Sample photo">
+          <img src="./img/image-placeholder.jpg" alt="Sample photo" />
           <div class="text">
             <h3>Sanity check</h3>
-            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
             <button>Read more</button>
           </div>
         </article>
       </main>
-      </div>
+    </div>
 
-      <footer class="footer">
-        <div class="logo-footer">
-          <!-- <h1>MY LOGO</h1> -->
-          <img src="./img/placeholder.com-logo1.png" alt="" width="200" />
-          <div class="socials">
-            <div class="social">instagram</div>
-            <div class="social">facebook</div>
-            <div class="social">twitter</div>
-            <div class="social">youtube</div>
-          </div>
+    <footer class="footer">
+      <div class="logo-footer">
+        <!-- <h1>MY LOGO</h1> -->
+        <img src="./img/placeholder.com-logo1.png" alt="" width="200" />
+        <div class="socials">
+          <div class="social">instagram</div>
+          <div class="social">facebook</div>
+          <div class="social">twitter</div>
+          <div class="social">youtube</div>
         </div>
-        <div class="boxes">
-          <div class="box">
-            <p>Σχετικα με εμας</p>
-            <p>Privacy & Cookies policy</p>
-          </div>
-          <div class="box">
-            <p>Στοιχεια επικοινωνιας</p>
-          </div>
-          <div class="box"></div>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <p>Σχετικα με εμας</p>
+          <p>Privacy & Cookies policy</p>
         </div>
-      </footer>
+        <div class="box">
+          <p>Στοιχεια επικοινωνιας</p>
+        </div>
+        <div class="box"></div>
+      </div>
+    </footer>
   </body>
-</div>
 </html>
