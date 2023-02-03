@@ -76,9 +76,8 @@ function validateForm() {
 let slideIndex = 1;
 let slides = document.getElementsByClassName("slides");
 let dots = document.getElementsByClassName("dot");
-let playButton = document.getElementById("play");
-let stopButton = document.getElementById("stop");
 let slideInterval;
+showSlides();
 
 function showSlides() {
   for (let i = 0; i < slides.length; i++) {
@@ -160,19 +159,3 @@ slides[0].style.display = "block";
 dots[0].className += " active";
 playButton.style.display = "none";
 showSlides();
-
-/*        NAVBAR TABS      */
-
-// Select all tabs
-const tabs = document.querySelectorAll(".tab");
-
-// Add click event listener to each tab
-tabs.forEach((tab) => {
-  tab.addEventListener("click", function () {
-    // Remove active class from all tabs
-    tabs.forEach((tab) => tab.classList.remove("active"));
-
-    // Add active class to the clicked tab
-    this.classList.add("active");
-  });
-});
