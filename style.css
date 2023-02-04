@@ -13,6 +13,18 @@ h1 {
   font-size: 100px;
   padding-bottom: 100px;
   color: rgb(2, 65, 123);
+  font-family:font2;
+  opacity:0.85;
+  
+}
+p{
+  font-family:font2;
+}
+@font-face{
+  font-family:"font1";
+  src:url(./fonts/Extra\ Sales\ Blank.ttf);
+  font-family:"font2";
+  src:url(./fonts/Vanilla\ Caramel.otf);
 }
 
 /*           NAVIGATION BAR       */
