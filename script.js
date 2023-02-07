@@ -92,7 +92,7 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  slideInterval = setTimeout(showSlides, 3000);
+  slideInterval = setTimeout(showSlides, 5000);
 }
 
 function prevSlide() {
