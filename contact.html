@@ -6,85 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="https://kit.fontawesome.com/4b42722e09.css" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/4b42722e09.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/4b42722e09.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b42722e09.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html">Skiathos</a>
-        </div>
-        <div class="tabs">
-          <a class="tab" href="./index.html">Index</a>
-          <a class="tab" href="./beaches.html">Beaches</a>
-          <a class="tab" href="./destinations.html">Destinations</a>
-          <a class="tab" href="./about.html">About Us</a>
-          <a class="tab current" href="./contact.html">Contact</a>
+      <div id="navbar">
+        <div class="navbar-content">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./img/logo/skiathos-map illustration.jpg" alt="logo"
+            /></a>
+          </div>
+          <div class="tabs">
+            <a class="tab" href="./index.html">Home</a>
+            <a class="tab" href="./beaches.html">Beaches</a>
+            <a class="tab" href="./destinations.html">Destinations</a>
+            <a class="tab" href="./about.html">About Us</a>
+            <a class="tab current" href="./contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </header>
-    <div id="contact-section">
-      <div class="contact-text">Contact Us</div>
-      <div id=contact-form>
-      <form action="#" onsubmit="return validateForm()">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." >
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <div class="form-container">
+      <div class="form-inner-container">
+        <div class="contact-text">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="form">
+          <div id="contact-form">
+            <form action="#" onsubmit="return validateForm()">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email..">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
 
-        <label for="vemail">Verify Email</label>
-        <input type="text" id="vemail" name="vemail" placeholder="Your email..">
-        
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your email.."
+              />
 
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address" placeholder="Your address..">
-    
-        <label for="comment">Comments</label>
-        <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-    </div>
-    
-      <footer class="footer">
-        <div class="logo-footer">
-          <h3>FOLLOW US</h3>
-          <div class="socials">
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+              <label for="vemail">Verify Email</label>
+              <input
+                type="text"
+                id="vemail"
+                name="vemail"
+                placeholder="Your email.."
+              />
+
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Your phone number.."
+              />
+
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Your address.."
+              />
+
+              <label for="comment">Comments</label>
+              <textarea
+                id="comment"
+                name="comment"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
           </div>
         </div>
-        <div class="boxes">
-          <div class="box">
-            <p>Σχετικα με εμας</p>
-            <p>Privacy & Cookies policy</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="logo-footer">
+        <h3>FOLLOW US</h3>
+        <div class="socials">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </div>
-          <div class="box">
-            <p>Στοιχεια επικοινωνιας</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
           </div>
-          <div class="box"></div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
-      </footer>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <p>Σχετικα με εμας</p>
+          <p>Privacy & Cookies policy</p>
+        </div>
+        <div class="box">
+          <p>Στοιχεια επικοινωνιας</p>
+        </div>
+        <div class="box"></div>
+      </div>
+    </footer>
   </body>
-</div>
 </html>
