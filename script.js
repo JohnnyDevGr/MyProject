@@ -159,3 +159,10 @@ slides[0].style.display = "block";
 dots[0].className += " active";
 playButton.style.display = "none";
 showSlides();
+
+/*          JSON       */
+const req = new XMLHttpRequest();
+
+req.open("GET");
+
+/*    RANDOM BEACHES ON HOMEPAGE   */

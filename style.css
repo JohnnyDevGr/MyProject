@@ -10,11 +10,11 @@ body {
 }
 
 p {
-  font-family: font3;
+  font-family: font1;
 }
 h1 {
   text-align: center;
-  font-family: font3;
+  font-family: font1;
   font-weight: bold;
   font-size: 50px;
   letter-spacing: 2px;
@@ -22,24 +22,16 @@ h1 {
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: black;
 }
 h3 {
-  font-family: font3;
+  font-family: font1;
   letter-spacing: 1px;
 }
 
 @font-face {
   font-family: "font1";
-  src: url(./fonts/Extra\ Sales.ttf);
-  font-family: "font2";
-  src: url(./fonts/Vanilla\ Caramel.otf);
-  font-family: "font3";
   src: url(./fonts/GilbertQualifiDemo.ttf);
-  /* font-family: "myfont";
-  src: url(./fonts/Palm\ Beach.ttf);
-  font-family: "myfont1";
-  src: url(./fonts/spacetime-regular.ttf); */
 }
 
 /*           NAVIGATION BAR       */
@@ -55,7 +47,7 @@ h3 {
   position: fixed;
   top: 0;
   z-index: 1;
-  font-family: font3;
+  font-family: font1;
 }
 .navbar-content {
   display: flex;
@@ -121,20 +113,40 @@ h3 {
   border-radius: 10px;
 }
 
-/* SECTION 1 */
+/*          HOME         */
 .megacontent {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin-top: 100px;
 }
 
 .photocontent {
   width: 100vw;
   height: 100vh;
-  background: url(./img/Index\ photo.webp) no-repeat center center/cover;
+  background: url(./img/index/Index\ photo.webp) no-repeat center center/cover;
 }
+
+.photocontent .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  padding: 100px;
+}
+.photocontent h1 {
+  text-align: center;
+  font-size: 150px;
+  padding-bottom: 100px;
+  font-family: font1;
+  opacity: 1;
+  text-shadow: 2px 2px 5px #000000;
+  color: white;
+}
+
 .index-photos {
   justify-content: center;
   width: 50%;
@@ -146,8 +158,11 @@ h3 {
   display: flex;
   width: 40%;
   height: 200px;
-  border: 1px solid black;
-  background-color: bisque;
+  transition: transform 0.2s ease-in-out;
+}
+
+.index-photos .photo:hover {
+  transform: scale(1.2);
 }
 .content-1 {
   width: 80%;
@@ -161,12 +176,16 @@ h3 {
   width: 50%;
   padding: 30px;
   text-align: left;
-  font-size: 20px;
-  font-weight: bold;
   margin-top: 20px;
-  letter-spacing: 0.15em;
-  font-family: font3;
 }
+
+.text-content1 p {
+  font-size: 26px;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  font-family: font1;
+}
+
 /* SECTION 2 */
 .upper-content {
   width: 100%;
@@ -199,20 +218,41 @@ h3 {
   width: 100%;
   height: 100%;
 }
+
 /*         LOWER CONTENT        */
 #lower-content {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 100px;
+}
+.view-more {
+  text-align: right;
+  width: 80%;
+  margin-top: 50px;
 }
 
-.photobeach {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
+.view-more button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 14px 50px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
+
+.view-more button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.view-more button:hover {
+  background-color: #0056b3;
+}
+
 /*          FOOTER         */
 #footer {
   background-color: rgb(5, 107, 203);
@@ -232,7 +272,6 @@ p.copyright {
   text-align: center;
   bottom: 0;
   font-family: roboto;
-  margin-top: 500px;
 }
 .boxes {
   display: flex;
@@ -240,7 +279,7 @@ p.copyright {
   align-items: center;
   gap: 80px;
   margin-right: 250px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .box {
@@ -249,6 +288,8 @@ p.copyright {
   height: 200px;
 }
 .box h2 {
+  color: white;
+  font-family: roboto;
   margin-bottom: 50px;
 }
 .box p {
@@ -350,6 +391,7 @@ p.copyright {
   background-color: #71717100;
   border: 1px solid white;
   height: 100%;
+  z-index: 1;
 }
 .prev {
   left: 0%;
@@ -364,37 +406,35 @@ p.copyright {
   background-color: #c2c2c267;
 }
 
-/* .graylayer {
-  width: 100%;
-  height: 50%;
-  color: rgb(126, 120, 120);
-} */
-
-.info {
+.beach-info {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
+  top: 60%;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
   padding: 100px;
 }
 
-.info h1 {
+.beach-info h1 {
   text-align: center;
   font-size: 150px;
   padding-bottom: 100px;
-  font-family: font3;
-  opacity: 0.85;
+  font-family: font1;
+  opacity: 1;
   text-shadow: 2px 2px 5px #000000;
   color: white;
 }
 
-.info p {
+.beach-info p {
   line-height: 1.5em;
   text-shadow: 2px 2px 5px #000000;
   color: white;
   font-size: 20px;
+  text-align: left;
 }
 .dot {
   cursor: pointer;
@@ -431,7 +471,8 @@ p.copyright {
     center/cover;
 }
 .bg7 {
-  background: url("./img/slideshow/maxilares.jpg") no-repeat center center/cover;
+  background: url("./img/slideshow/agia\ paraskevi.jpg") no-repeat center
+    center/cover;
 }
 
 .active,
@@ -473,7 +514,7 @@ p.copyright {
   padding: 20px 20px 20px;
 }
 .text {
-  height: 350px;
+  height: 320px;
 }
 .text p {
   font-weight: bold;
@@ -506,6 +547,34 @@ p.copyright {
 }
 
 /*       DESTINATIONS    */
+
+#destinations {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#destinations::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(./img/destinations/Destinations.jpg) no-repeat center
+    center/cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#destinations h1 {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  margin-top: 150px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px #000000;
+}
 
 .destination-tab {
   width: 80%;
@@ -590,33 +659,56 @@ p.copyright {
 
 /*          ABOUT US       */
 
+#about-us {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
 #about-us::before {
   content: "";
-  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background: url(./img/about\ us.jpg) no-repeat center center/cover;
-  opacity: 0.7;
+  background: url(./img/about-us/about-us.jpg) no-repeat center center/cover;
+  opacity: 0.8;
   z-index: -1;
 }
 
-#about-us {
-  padding: 200px;
-  color: black;
-}
-
 #about-us h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  margin-top: 150px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px #000000;
 }
-
-#about-us p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.about-image {
+  width: 50%;
+}
+.about-image img {
+  width: 600px;
+}
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.about-text p {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.05em;
 }
 
 /*     CONTACT       */
@@ -625,30 +717,32 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   resize: vertical;
 }
 
 input[type="submit"] {
-  background-color: #ffffff;
+  background-color: #eda71a;
   color: rgb(4, 4, 4);
   padding: 12px 20px;
+  width: 100%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: Georgia;
+  font-size: 20px;
+  font-family: Roboto;
 }
 input[type="submit"]:hover {
   background-color: #4568a0;
 }
 label {
   color: rgb(255, 255, 255);
-  font-family: Georgia;
+  font-family: Roboto;
+  font-size: 18px;
 }
 
 #contact-form {
@@ -657,17 +751,16 @@ label {
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin-top: 80px;
+  margin-top: 100px;
   border-radius: 20px;
   background-color: rgb(2, 65, 123);
-  padding: 20px;
+  padding: 50px;
 }
 .form-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 .form-container::before {
   content: "";
@@ -677,8 +770,6 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(./img/island-of-skiathos-in-greece-white-map-illustration.webp)
-    no-repeat center center/cover;
   opacity: 0.3;
   z-index: -1;
 }
@@ -694,10 +785,20 @@ label {
 }
 
 .contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   animation: moveInFromRight 1s ease-in-out;
   width: 50%;
 }
 .contact-text h1 {
+  color: rgb(2, 65, 123);
+  font-size: 100px;
+  margin-bottom: 80px;
+}
+.contact-text p {
+  font-size: 28px;
+  text-align: center;
   color: rgb(2, 65, 123);
 }
 
@@ -717,4 +818,48 @@ label {
   to {
     transform: translateX(0%);
   }
+}
+
+.mapcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map {
+  bottom: 0;
+  margin-top: 100px;
+  width: 70%;
+  height: 400px;
+}
+
+.services h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  font-family: font1;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+  margin-top: 80px;
+}
+.image {
+  width: 20%;
+  height: 250px;
+  padding: 20px;
+  text-align: center;
+}
+.image h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.image p {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: bold; */
+  font-size: 18px;
 }
