@@ -1,3 +1,4 @@
+/*             UTILITES        */
 * {
   padding: 0;
   margin: 0;
@@ -10,27 +11,28 @@ body {
 }
 
 p {
-  font-family: font1;
+  font-family:Roboto;
 }
 h1 {
   text-align: center;
-  font-family: font1;
+  font-family:Roboto;
   font-weight: bold;
   font-size: 50px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 h2 {
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 h3 {
-  font-family: font1;
+  font-family:Roboto;
   letter-spacing: 1px;
 }
 
 @font-face {
-  font-family: "font1";
+  font-family: Roboto";
   src: url(./fonts/GilbertQualifiDemo.ttf);
 }
 
@@ -46,8 +48,8 @@ h3 {
   margin: 0;
   position: fixed;
   top: 0;
-  z-index: 1;
-  font-family: font1;
+  z-index: 2;
+  font-family:Roboto;
 }
 .navbar-content {
   display: flex;
@@ -125,7 +127,7 @@ h3 {
 .photocontent {
   width: 100vw;
   height: 100vh;
-  background: url(./img/index/Index\ photo.webp) no-repeat center center/cover;
+  background: url(./img/index/Index\photo.webp) no-repeat center center/cover;
 }
 
 .photocontent .info {
@@ -141,7 +143,7 @@ h3 {
   text-align: center;
   font-size: 150px;
   padding-bottom: 100px;
-  font-family: font1;
+  font-family:Roboto;
   opacity: 1;
   text-shadow: 2px 2px 5px #000000;
   color: white;
@@ -180,10 +182,10 @@ h3 {
 }
 
 .text-content1 p {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 2rem;
-  letter-spacing: 2px;
-  font-family: font1;
+  letter-spacing: 1px;
+  font-family:Roboto;
 }
 
 /*    UPPER CONTENT     */
@@ -225,7 +227,7 @@ h3 {
   margin-top: 200px;
 }
 .lower-text h1 {
-  font-size: 100px;
+  font-size: 60px;
 }
 
 #lower-content {
@@ -264,12 +266,19 @@ h3 {
 /*          FOOTER         */
 #footer {
   background-color: rgb(5, 107, 203);
-  width: 100%;
+  width: 100vw;
   height: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
+  align-items: center;
   margin-top: 235px;
-  position: relative;
+}
+.footer-container {
+  width:80%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap:150px;
 }
 p.copyright {
   position: absolute;
@@ -281,28 +290,19 @@ p.copyright {
   bottom: 0;
   font-family: roboto;
 }
-.boxes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  margin-right: 250px;
-  margin-bottom: 100px;
-}
 
 .box {
-  text-align: center;
-  width: 200px;
+  width: 15%;
   height: 200px;
 }
 .box h2 {
   color: white;
   font-family: roboto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .box p {
   padding: 1px;
-  text-align: center;
+  text-align: left;
   color: white;
   font-size: 18px;
   font-family: Roboto;
@@ -311,8 +311,7 @@ p.copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  margin-bottom: 200px;
+  
 }
 .logo-footer a img {
   width: 200px;
@@ -430,8 +429,8 @@ p.copyright {
 
 .beach-info h1 {
   text-align: center;
-  font-size: 150px;
-  font-family: font1;
+  font-size: 100px;
+  font-family:Roboto;
   opacity: 1;
   text-shadow: 2px 2px 5px #000000;
   color: white;
@@ -533,7 +532,7 @@ p.copyright {
   height: 320px;
 }
 .text p {
-  font-weight: bold;
+  
   font-family: Arial;
   padding: 20px;
 }
@@ -723,7 +722,7 @@ p.copyright {
 }
 .about-text p {
   font-family: roboto;
-  font-weight: bold;
+  
   font-size: 20px;
   letter-spacing: 0.05em;
 }
@@ -810,12 +809,13 @@ label {
 }
 .contact-text h1 {
   color: rgb(2, 65, 123);
-  font-size: 100px;
+  font-size: 80px;
   margin-bottom: 80px;
+  text-align: left;
 }
 .contact-text p {
   font-size: 28px;
-  text-align: center;
+  text-align: left;
   color: rgb(2, 65, 123);
 }
 
@@ -855,7 +855,7 @@ label {
   text-align: center;
   margin-top: 100px;
   font-size: 50px;
-  font-family: font1;
+  font-family:Roboto;
 }
 .image-container {
   display: flex;
