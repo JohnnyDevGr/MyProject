@@ -183,7 +183,10 @@ h2 {
   height:30%;
   width:100%;
   text-align: center;
-  padding:0px 100px;
+  padding:0px 50px;
+}
+.stat{
+  width:15%;
 }
 .stat h2{
   padding: 50px;
@@ -191,8 +194,10 @@ h2 {
 
 }
 .stat p{
-  font-size: 24px;
+  font-size: 20px;
+  text-align: center;
 }
+
 .stats-photo{
   display: flex;
   width:50%;
@@ -211,6 +216,14 @@ h2 {
   color:white;
   position:absolute;
   right:10%;
+  padding:20px;
+  line-height: 1.5em;
+  font-size:28px;
+}
+span{
+  font-size: 40px;
+  font-weight: bold;
+  color: #3399ff;  
 }
 .stats-container{
   display: flex;
