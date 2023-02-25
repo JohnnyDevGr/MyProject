@@ -166,3 +166,18 @@ const req = new XMLHttpRequest();
 req.open("GET");
 
 /*    RANDOM BEACHES ON HOMEPAGE   */
+// Select the main element and all the articles within it
+// Get the main cards element
+const mainCards = document.querySelector(".cards");
+
+// Get an array of all card elements
+const cards = Array.from(document.querySelectorAll(".card"));
+
+// Shuffle the cards array
+cards.sort(() => Math.random() - 0.5);
+
+// Clear the main cards element
+mainCards.innerHTML = "";
+
+// Append the shuffled cards to the main cards element
+cards.forEach((card) => mainCards.appendChild(card));
