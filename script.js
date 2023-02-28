@@ -149,35 +149,49 @@ function stopSlide() {
   playButton.style.display = "block";
 }
 
-// Set default style of images to "none"
 for (let i = 0; i < slides.length; i++) {
   slides[i].style.display = "none";
 }
 
-// Show the first image
 slides[0].style.display = "block";
 dots[0].className += " active";
 playButton.style.display = "none";
 showSlides();
 
 /*          JSON       */
-const req = new XMLHttpRequest();
+/* const req = new XMLHttpRequest();
 
 req.open("GET");
+req.responseType = "json";
+req.addEventListener("readystatechange", () => {
+  console.log(req.readyState);
+
+  if (req.readyState === XMLHttpRequest.DONE) {
+    switch (req.status) {
+      case 200:
+        console.log(req.response);
+        const ul = document.getElementsByClassName("json-text");
+
+        for (let txt of req.response) {
+          const li = document.createElement("p");
+          p.textContent = `${txt.content}`;
+        }
+        break;
+      case 404:
+        console.error("Not found");
+        break;
+    }
+  }
+});
+req.send();
+ */
+
+fetch("./data/about.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const p = document.getElementById("json-text");
+    p.textContent = data[0].content;
+    console.log(data);
+  });
 
 /*    RANDOM BEACHES ON HOMEPAGE   */
-// Select the main element and all the articles within it
-// Get the main cards element
-const mainCards = document.querySelector(".cards");
-
-// Get an array of all card elements
-const cards = Array.from(document.querySelectorAll(".card"));
-
-// Shuffle the cards array
-cards.sort(() => Math.random() - 0.5);
-
-// Clear the main cards element
-mainCards.innerHTML = "";
-
-// Append the shuffled cards to the main cards element
-cards.forEach((card) => mainCards.appendChild(card));
