@@ -27,6 +27,7 @@
         </div>
       </div>
     </header>
+
     <div class="form-container">
       <div class="form-inner-container">
         <div class="contact-text">
@@ -37,7 +38,7 @@
         </div>
         <div class="form">
           <div id="contact-form">
-            <form action="#" onsubmit="return validateForm()">
+            <form onsubmit="return validateForm()">
               <label for="fname">First Name</label>
               <input
                 type="text"
@@ -93,8 +94,10 @@
                 placeholder="Write something.."
                 style="height: 200px"
               ></textarea>
-
-              <input type="submit" value="Submit" />
+              <div id="submit-btn">
+                <p id="allgood"></p>
+              </div>
+              <input id="test" type="submit" value="Submit" />
             </form>
           </div>
         </div>

@@ -955,6 +955,15 @@ label {
 .image p {
   font-size: 18px;
 }
+#submit-btn {
+  width: 100%;
+  text-align: center;
+  display: none;
+  padding: 30px;
+  color: white;
+  background: green;
+  transition: all 0.5s linear;
+}
 
 /*              RESPONSIVE               */
 
