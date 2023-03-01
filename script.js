@@ -79,6 +79,7 @@ let dots = document.getElementsByClassName("dot");
 let playButton = document.getElementById("play");
 let stopButton = document.getElementById("stop");
 let slideInterval;
+let updateInterval;
 showSlides();
 
 function showSlides() {
@@ -149,6 +150,13 @@ function stopSlide() {
   clearTimeout(slideInterval);
   stopButton.style.display = "none";
   playButton.style.display = "block";
+}
+function updateInterval() {
+  interval = intervalInput.value;
+  if (slideInterval) {
+    clearTimeout(slideInterval);
+    slideInterval = setTimeout(showSlides, interval);
+  }
 }
 
 for (let i = 0; i < slides.length; i++) {
