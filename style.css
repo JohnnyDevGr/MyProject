@@ -1,4 +1,4 @@
-/* RESPONSIVE,SLIDESHOW KOUBIA KTLP,CONTACT FORM, JS STO INDEX ME TIS KARTES */
+/* RESPONSIVE,SLIDESHOW SUBMIT APO XRISTI KAI DIORTHOSI THS JS GIA NA TREKSEI TO JSON,CONTACT FORM NA KANEI CHECK STO OK, JS STO INDEX ME TIS KARTES */
 
 /*             UTILITES        */
 * {
@@ -10,17 +10,6 @@ body {
   font-family: "Open Sans";
   line-height: 1.5em;
   overflow-x: hidden;
-}
-
-p {
-  font-family: "Open Sans";
-}
-h1 {
-  font-family: "Open Sans";
-}
-
-h2 {
-  font-family: "Open Sans";
 }
 
 /*           NAVIGATION BAR       */
@@ -515,6 +504,13 @@ span {
 .next:hover {
   background-color: #c2c2c267;
 }
+#play,
+#stop {
+  padding: 30px;
+  background-color: #007bff;
+  color: #ccc;
+  border-radius: 10px;
+}
 
 .beach-info {
   width: 100%;
@@ -964,4 +960,10 @@ label {
   .wrapper {
     background-attachment: scroll;
   }
+}
+/*Smartphones*/
+@media (max-width: 500px) {
+}
+/*Tablet*/
+@media (min-width: 501px) and (max-width: 768px) {
 }

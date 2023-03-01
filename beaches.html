@@ -42,9 +42,17 @@
         <img src="./img/slideshow/skiathos-greece.jpg" class="slides" />
         <img src="./img/slideshow/Aerial bourtzi.webp" class="slides" />
         <img src="./img/slideshow/agia paraskevi.jpg" class="slides" />
-
         <button class="prev" onclick="prevSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
+        <button id="play" onclick="playSlide()">Play</button>
+        <button id="stop" onclick="stopSlide()">Stop</button>
+        <label for="interval">Interval</label>
+        <input
+          type="number"
+          id="interval"
+          placeholder="Timer"
+          onchange="updateInterval()"
+        />
         <div class="beach-info">
           <h1>Beaches</h1>
           <p>

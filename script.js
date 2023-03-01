@@ -76,6 +76,8 @@ function validateForm() {
 let slideIndex = 1;
 let slides = document.getElementsByClassName("slides");
 let dots = document.getElementsByClassName("dot");
+let playButton = document.getElementById("play");
+let stopButton = document.getElementById("stop");
 let slideInterval;
 showSlides();
 
@@ -138,7 +140,7 @@ function currentSlide(index) {
 }
 
 function playSlide() {
-  slideInterval = setTimeout(showSlides, 3000);
+  slideInterval = setTimeout(showSlides, 5000);
   playButton.style.display = "none";
   stopButton.style.display = "block";
 }
@@ -155,8 +157,6 @@ for (let i = 0; i < slides.length; i++) {
 
 slides[0].style.display = "block";
 dots[0].className += " active";
-playButton.style.display = "none";
-showSlides();
 
 /*          JSON       */
 /* const req = new XMLHttpRequest();
