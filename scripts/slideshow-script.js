@@ -2,12 +2,13 @@
 //ts@check
 
 /*            SLIDESHOW            */
-let slideIndex = 1;
+let slideIndex = 0;
 let slides = document.getElementsByClassName("slides");
 let dots = document.getElementsByClassName("dot");
 let playButton = document.getElementById("play");
 let stopButton = document.getElementById("stop");
 let slideInterval;
+let intervalTime = 1000;
 
 function showSlides() {
   for (let i = 0; i < slides.length; i++) {
@@ -22,7 +23,11 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  slideInterval = setTimeout(showSlides, 5000);
+  slideInterval = setTimeout(showSlides, intervalTime);
+}
+function changeValue() {
+  let input = document.getElementById("interval");
+  intervalTime = input.value * 1000;
 }
 
 function prevSlide() {
@@ -77,13 +82,6 @@ function stopSlide() {
   clearTimeout(slideInterval);
   stopButton.style.display = "none";
   playButton.style.display = "block";
-}
-function updateInterval() {
-  interval = intervalInput.value;
-  if (slideInterval) {
-    clearTimeout(slideInterval);
-    slideInterval = setTimeout(showSlides, interval);
-  }
 }
 
 for (let i = 0; i < slides.length; i++) {
