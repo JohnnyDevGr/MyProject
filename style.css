@@ -390,23 +390,104 @@ span {
 #footer {
   position: relative;
   background-color: rgb(5, 107, 203);
-  width: 100vw;
-  height: 350px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 235px;
 }
 
 .footer-container {
-  width: 80%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 150px;
+  padding-top: 100px;
+}
+
+.social svg {
+  width: 40px;
+  height: 40px;
+}
+
+.social svg path {
+  fill: #ffffff;
+}
+.socials svg:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.2);
+}
+
+.footer-container > div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 250px;
 }
 
 .copyright {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.copyright:before {
+  content: "";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  width: 90%;
+  padding-bottom: 20px;
+  margin: 20px auto;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-footer {
+  text-align: center;
+}
+
+.logo-footer img {
+  width: 100%;
+}
+.logo-footer:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.social-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-container > div h2,
+.footer-container > div p {
+  color: #ffffff;
+}
+
+.footer-container > div h2 {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.footer-container > div p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* .copyright {
   position: absolute;
   width: 100%;
   color: #fff;
@@ -414,6 +495,13 @@ span {
   font-size: 16px;
   text-align: center;
   bottom: 0;
+}
+.social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 200px;
 }
 
 .box {
@@ -445,10 +533,7 @@ span {
   height: 70px;
 }
 
-.logo-footer:hover {
-  transition: all 0.3s ease;
-  transform: scale(1.1);
-}
+
 
 .socials {
   display: flex;
@@ -472,7 +557,7 @@ span {
 .social img:hover {
   transition: all 0.2s ease;
   transform: scale(1.2);
-}
+} */
 
 /*     BEACHES     */
 .beachcontainer {
@@ -976,7 +1061,11 @@ label {
   color: red;
 }
 
-.hidden {
+.thank-you.hidden {
+  display: none;
+}
+
+.error-hide {
   display: none;
 }
 
@@ -1061,8 +1150,16 @@ label {
   background: green;
   transition: all 0.5s linear;
 }
+
 .beach-hidden {
   display: none;
+}
+
+div#thank-you-message {
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 /*  ------------ RESPONSIVE ---------------     */
@@ -1088,6 +1185,7 @@ label {
     margin-right: 0;
     gap: 50px;
   }
+
   .tab {
     font-size: 16px;
     padding: 5px 20px;
@@ -1098,9 +1196,11 @@ label {
   .photocontent {
     margin-bottom: 100px;
   }
+
   .photocontent .info {
     top: 40%;
   }
+
   .photocontent h1 {
     font-size: 70px;
   }
@@ -1140,6 +1240,7 @@ label {
     height: auto;
     margin-bottom: 50px;
   }
+
   .stats-photo {
     display: none;
   }
@@ -1160,6 +1261,7 @@ label {
   .middle-content {
     width: 90%;
   }
+
   iframe {
     width: 100%;
     height: 400px;
@@ -1175,9 +1277,11 @@ label {
   .index-card {
     width: 60%;
   }
+
   .index-card .text {
     height: auto;
   }
+
   .index-card .text > button {
     margin-top: 15px;
     position: relative;
@@ -1189,15 +1293,19 @@ label {
   .beachcontainer {
     display: none;
   }
+
   .beach-hidden {
     display: block;
   }
+
   .beach-text {
     margin-top: 80px;
   }
+
   .beach-text h1 {
     font-size: 40px;
   }
+
   .dest-bg {
     background: url(./img/slideshow/16256-118729-f72734259_3xl.webp) no-repeat
       center center/cover;
@@ -1213,39 +1321,64 @@ label {
   .card {
     width: 60%;
   }
+
   .card .text {
     height: auto;
   }
+
   .card .text > button {
     margin-top: 15px;
     position: relative;
     width: 100%;
   }
+
   /*    RESPONSIVE FOOTER(768px)     */
-  #footer {
-    height: unset;
-    padding: 40px 0px 20px;
-    margin-top: 25px;
-  }
-
-  #footer .box {
-    width: calc(50% - 20px);
-  }
-
-  #footer .box * {
-    text-align: center;
-  }
 
   .footer-container {
     width: 90%;
-    gap: 10px;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+  }
+
+  .footer-container > div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+
+  .footer-container > div:nth-child(2),
+  .footer-container > div:nth-child(3),
+  .footer-container > div:nth-child(4) {
+    width: 25%;
+    text-align: left;
+    display: block;
+    padding-bottom: 80px;
+  }
+
+  .logo-footer img {
+    width: 50%;
+  }
+
+  .socials {
+    position: absolute;
+    bottom: 0;
   }
 
   .copyright {
-    position: relative;
-    order: 9;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
+
+  .copyright:before {
+    padding-bottom: 0px;
+    margin: 20px auto;
+  }
+
   /*    RESPONSIVE DESTINATIONS(768px)    */
 
   .rows {
@@ -1262,6 +1395,7 @@ label {
     height: 350px;
     object-fit: cover;
   }
+
   .row-overlay {
     margin-top: 17px;
   }
@@ -1273,29 +1407,36 @@ label {
     justify-content: center;
     align-items: center;
   }
+
   .about-text {
     padding-top: 50px;
     width: 70%;
   }
+
   .about-image {
     width: 80%;
   }
+
   .about-image img {
     width: 100%;
     object-fit: cover;
   }
+
   .image-container {
     gap: 10px;
     flex-wrap: wrap;
   }
+
   .image {
     height: auto;
     width: 100%;
   }
+
   /*    RESPONSIVE CONTACT(768px)    */
   .form-container {
     margin-top: 150px;
   }
+
   .form-inner-container {
     width: 90%;
     flex-wrap: wrap;
@@ -1312,9 +1453,11 @@ label {
   .form {
     width: 100%;
   }
+
   #contact-form {
     margin-top: 40px;
   }
+
   .map {
     width: 90%;
     margin-top: 50px;
@@ -1327,20 +1470,24 @@ label {
   .tabs {
     gap: 6px;
   }
+
   .tab {
     font-size: 18px;
     padding: 2px 8px;
     margin-top: 10px;
   }
+
   .logo a img {
     width: 150px;
     height: auto;
   }
+
   /*    RESPONSIVE INDEX(500px)    */
 
   .container {
     margin-top: 50px;
   }
+
   .photo {
     width: 70%;
   }
@@ -1349,13 +1496,16 @@ label {
   .parallax-content-1 p {
     width: 100%;
   }
+
   .index-card {
     width: 80%;
   }
+
   /*    RESPONSIVE BEACHES(500px)    */
   .beach-text h1 {
     font-size: 28px;
   }
+
   .card {
     width: 80%;
   }
@@ -1366,8 +1516,28 @@ label {
     font-size: 50px;
     line-height: 1;
   }
+
   /*    RESPONSIVE CONTACT(500px)    */
   #contact-form {
     width: 100%;
+  }
+
+  /*    RESPONSIVE FOOTER(500px)    */
+
+  .footer-container {
+    padding-top: 50px;
+  }
+
+  .footer-container > div h2 {
+    font-size: 22px;
+  }
+
+  .footer-container > div p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .footer-container > div {
+    min-height: auto;
   }
 }
