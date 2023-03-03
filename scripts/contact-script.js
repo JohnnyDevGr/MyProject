@@ -1,34 +1,53 @@
 "use strict";
 //ts@check
 
-/*    CONTACT FORM     */
+/*          CONTACT FORM       */
 
-function validateForm() {
+const form = document.getElementsByClassName("form");
+const thankYou = document.getElementsByClassName("thank-you");
+const nameInput = document.querySelector('input[fname="fullname"]');
+
+let isFormValid = false;
+
+const validateInputs = () => {
+  nameInput.classList.remove("invalid");
+  nameInput.nextElementSibling.classList.add("hidden");
+  isFormValid = true;
+  if (!nameInput.value) {
+    nameInput.classList.add("invalid");
+    nameInput.nextElementSibling.classList.remove("hidden");
+    isFormValid = true;
+  }
+};
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validateInputs();
+  if (isFormValid) {
+    form.remove();
+    thankYou.classList.remove("hidden");
+  }
+});
+nameInput.addEventListener("input", () => {
+  validateInputs();
+});
+
+/* function validateForm() {
   {
     testName();
-    testLname();
     testVEmail();
     testEmail();
     testphone();
   }
+
+
+
   function testName() {
     let regName = /^[A-Za-z]+$/;
     let fname = document.getElementById("fname").value;
     if (regName.test(fname)) {
       return true;
     } else {
-      alert("Invalid first name");
-      return false;
-    }
-  }
-
-  function testLname() {
-    let regName = /^[A-Za-z]+$/;
-    let lname = document.getElementById("lname").value;
-    if (regName.test(lname)) {
-      return true;
-    } else {
-      alert("Invalid last name");
+      alert("Invalid full name");
       return false;
     }
   }
@@ -67,7 +86,8 @@ function validateForm() {
   let address = document.getElementById("address").value;
 
   if (address.trim().length === 0) {
-    alert("Address is missing");
+    alert("Invalid Address");
     return false;
   }
 }
+ */

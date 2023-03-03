@@ -7,6 +7,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Open Sans";
   line-height: 1.5em;
@@ -27,6 +28,7 @@ body {
   top: 0;
   z-index: 2;
 }
+
 .navbar-content {
   display: flex;
   justify-content: space-between;
@@ -37,10 +39,12 @@ body {
 .logo {
   margin-left: 150px;
 }
+
 .logo a img {
   width: 200px;
   height: 70px;
 }
+
 .logo:hover {
   transition: all 0.3s ease;
   transform: scale(1.1);
@@ -109,6 +113,7 @@ body {
   top: 50%;
   padding: 100px;
 }
+
 .photocontent h1 {
   text-align: center;
   font-size: 150px;
@@ -125,6 +130,7 @@ body {
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .photo {
   display: flex;
   width: 40%;
@@ -135,6 +141,7 @@ body {
 .index-photos .photo:hover {
   transform: scale(1.2);
 }
+
 .content-1 {
   width: 80%;
   display: flex;
@@ -155,6 +162,7 @@ body {
   line-height: 2rem;
   letter-spacing: 1px;
 }
+
 /*         PARALLAX      */
 .wrapper {
   height: 100vh;
@@ -163,6 +171,7 @@ body {
     center/cover;
   background-attachment: fixed;
 }
+
 .wrapper-1 {
   height: 100vh;
   background: url(./img/parallax/141251-viewom.jpg) no-repeat center
@@ -223,13 +232,16 @@ body {
   text-align: center;
   padding: 0px 50px;
 }
+
 .stat {
   width: 15%;
 }
+
 .stat h2 {
   padding: 50px;
   font-size: 50px;
 }
+
 .stat p {
   font-size: 20px;
   text-align: center;
@@ -243,9 +255,11 @@ body {
   left: 0;
   position: absolute;
 }
+
 .stats-photo img {
   height: 100%;
 }
+
 .stats-text {
   height: 50%;
   width: 30%;
@@ -256,11 +270,13 @@ body {
   line-height: 1.5em;
   font-size: 28px;
 }
+
 span {
   font-size: 40px;
   font-weight: bold;
   color: #deba17;
 }
+
 .stats-container {
   display: flex;
   align-items: center;
@@ -278,6 +294,7 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .video {
   width: 100%;
   height: 100%;
@@ -289,6 +306,7 @@ span {
   justify-content: center;
   width: 100%;
 }
+
 .lower-text h1 {
   text-align: center;
   font-weight: bold;
@@ -317,6 +335,7 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .index-cards {
   width: 100%;
   display: flex;
@@ -326,6 +345,7 @@ span {
   gap: 7%;
   height: 100%;
 }
+
 .index-card {
   flex: 0 0 20%;
   border: 1px solid #ccc;
@@ -337,19 +357,23 @@ span {
   position: relative;
   background-color: white;
 }
+
 .index-card .text {
   padding: 20px 20px 20px;
 }
+
 .index-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: translate(-10px, -10px);
 }
+
 .index-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   cursor: pointer;
 }
+
 .index-card .text > button {
   background: #007bff;
   border: none;
@@ -373,6 +397,7 @@ span {
   align-items: center;
   margin-top: 235px;
 }
+
 .footer-container {
   width: 80%;
   display: flex;
@@ -380,6 +405,7 @@ span {
   justify-content: center;
   gap: 150px;
 }
+
 .copyright {
   position: absolute;
   width: 100%;
@@ -394,22 +420,26 @@ span {
   width: 15%;
   height: 200px;
 }
+
 .box h2 {
   color: white;
 
   margin-bottom: 30px;
 }
+
 .box p {
   padding: 1px;
   text-align: left;
   color: white;
   font-size: 18px;
 }
+
 .logo-footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .logo-footer a img {
   width: 200px;
   height: 70px;
@@ -419,6 +449,7 @@ span {
   transition: all 0.3s ease;
   transform: scale(1.1);
 }
+
 .socials {
   display: flex;
   gap: 10px;
@@ -426,6 +457,7 @@ span {
   align-items: center;
   margin-top: 50px;
 }
+
 .social {
   font-size: 32px;
   width: 50px;
@@ -436,6 +468,7 @@ span {
   width: 100%;
   height: 80%;
 }
+
 .social img:hover {
   transition: all 0.2s ease;
   transform: scale(1.2);
@@ -453,12 +486,14 @@ span {
   position: relative;
   top: 70px;
 }
+
 #slideshow {
   position: absolute;
   top: 0;
   width: 100%;
   height: 80%;
 }
+
 #slideshow img {
   height: 100%;
   width: 100%;
@@ -467,6 +502,7 @@ span {
   justify-content: center;
   align-content: center;
 }
+
 #indicator {
   position: absolute;
   display: flex;
@@ -477,6 +513,7 @@ span {
   gap: 30px;
   margin-bottom: 100px;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -493,6 +530,7 @@ span {
   height: 100%;
   z-index: 1;
 }
+
 .prev {
   left: 0%;
 }
@@ -501,10 +539,12 @@ span {
   right: 0%;
   border-radius: 3px 0 0 3px;
 }
+
 .prev:hover,
 .next:hover {
   background-color: #c2c2c267;
 }
+
 #play,
 #stop {
   padding: 30px;
@@ -543,6 +583,7 @@ span {
   text-align: left;
   padding-top: 70px;
 }
+
 .dot {
   cursor: pointer;
   height: 100px;
@@ -554,29 +595,36 @@ span {
   transition: all 0.6s ease;
   box-shadow: 5px 10px 10px #888888;
 }
+
 .bg1 {
   background: url("./img/slideshow/16256-118729-f72734259_3xl.webp") no-repeat
     center center/cover;
 }
+
 .bg2 {
   background: url("./img/slideshow/goingoutskiathos_1750x680.jpg") no-repeat
     center center/cover;
 }
+
 .bg3 {
   background: url("./img/slideshow/paralia.jpg") no-repeat center center/cover;
 }
+
 .bg4 {
   background: url("./img/slideshow/lalaria\ sunset.jpg") no-repeat center
     center/cover;
 }
+
 .bg5 {
   background: url("./img/slideshow/skiathos-greece.jpg") no-repeat center
     center/cover;
 }
+
 .bg6 {
   background: url("./img/slideshow/Aerial\ bourtzi.webp") no-repeat center
     center/cover;
 }
+
 .bg7 {
   background: url("./img/slideshow/agia\ paraskevi.jpg") no-repeat center
     center/cover;
@@ -588,10 +636,13 @@ span {
   opacity: 1;
   transform: scale(1.1);
 }
+
 .beach-text {
   margin-top: 200px;
 }
+
 .beach-text h1 {
+  text-align: center;
   font-size: 60px;
 }
 
@@ -603,6 +654,7 @@ span {
   height: auto;
   justify-content: center;
 }
+
 .cards {
   width: 100%;
   display: flex;
@@ -612,6 +664,7 @@ span {
   gap: 50px;
   height: 100%;
 }
+
 .card {
   flex: 0 0 20%;
   border: 1px solid #ccc;
@@ -623,30 +676,37 @@ span {
   position: relative;
   background-color: white;
 }
+
 .card .text {
   padding: 20px 20px 20px;
 }
+
 .text {
   height: 320px;
 }
+
 .text p {
   padding: 20px;
 }
+
 .text h3 {
   margin-top: 10px;
   margin-left: 20px;
   font-size: 20px;
 }
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: translate(-10px, -10px);
 }
+
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   cursor: pointer;
 }
+
 .card .text > button {
   background: #007bff;
   border: none;
@@ -703,16 +763,19 @@ span {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
+
 .row-header {
   width: 52%;
   display: flex;
   text-align: center;
 }
+
 .row-header h2 {
   font-size: 40px;
   font-weight: bold;
   align-self: flex-start;
 }
+
 .row-container {
   display: flex;
   width: 100%;
@@ -781,6 +844,7 @@ span {
   margin-top: 150px;
   text-shadow: 2px 2px 5px #000000;
 }
+
 .about-content {
   display: flex;
   justify-content: center;
@@ -788,18 +852,22 @@ span {
   width: 80%;
   height: 100%;
 }
+
 .about-image {
   width: 50%;
 }
+
 .about-image img {
   width: 600px;
 }
+
 .about-text {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
 }
+
 #json-text {
   font-size: 20px;
   letter-spacing: 0.05em;
@@ -808,14 +876,13 @@ span {
 /*     CONTACT       */
 
 input[type="text"],
-select,
 textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
   margin-bottom: 10px;
+  box-sizing: border-box;
   resize: vertical;
 }
 
@@ -829,9 +896,11 @@ input[type="submit"] {
   cursor: pointer;
   font-size: 20px;
 }
+
 input[type="submit"]:hover {
   background-color: #4568a0;
 }
+
 label {
   color: rgb(255, 255, 255);
 
@@ -849,12 +918,14 @@ label {
   background-color: rgb(2, 65, 123);
   padding: 50px;
 }
+
 .form-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .form-container::before {
   content: "";
   display: block;
@@ -873,6 +944,7 @@ label {
   align-items: center;
   justify-content: center;
 }
+
 .form {
   width: 50%;
 }
@@ -884,22 +956,41 @@ label {
   animation: moveInFromRight 1s ease-in-out;
   width: 50%;
 }
+
 .contact-text h1 {
   color: rgb(2, 65, 123);
   font-size: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   text-align: left;
 }
+
 .contact-text p {
   font-size: 28px;
   text-align: left;
   color: rgb(2, 65, 123);
+  margin-left: 8px;
+}
+
+.error-hide {
+  font-size: 13px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.thankyou {
+  padding: 40px;
+  font-size: 32px;
+  text-align: center;
 }
 
 @keyframes moveInFromLeft {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0%);
   }
@@ -909,6 +1000,7 @@ label {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0%);
   }
@@ -920,6 +1012,7 @@ label {
   justify-content: center;
   align-items: center;
 }
+
 .map {
   bottom: 0;
   margin-top: 100px;
@@ -933,6 +1026,7 @@ label {
   margin-top: 100px;
   font-size: 50px;
 }
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -941,19 +1035,23 @@ label {
   width: 100%;
   margin-top: 80px;
 }
+
 .image {
   width: 20%;
   height: 250px;
   padding: 20px;
   text-align: center;
 }
+
 .image h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 .image p {
   font-size: 18px;
 }
+
 #submit-btn {
   width: 100%;
   text-align: center;
@@ -963,17 +1061,313 @@ label {
   background: green;
   transition: all 0.5s linear;
 }
+.beach-hidden {
+  display: none;
+}
 
-/*              RESPONSIVE               */
+/*  ------------ RESPONSIVE ---------------     */
 
-@media only screen and (max-device-width: 1366px) {
-  .wrapper {
-    background-attachment: scroll;
+/*         RESPONSIVE FOR TABLETS     */
+@media (max-width: 768px) {
+  /*    RESPONSIVE NAVBAR(768px)    */
+  #navbar {
+    height: 120px;
+  }
+
+  .navbar-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .tabs {
+    width: auto;
+    margin-right: 0;
+    gap: 50px;
+  }
+  .tab {
+    font-size: 16px;
+    padding: 5px 20px;
+  }
+
+  /*     RESPONSIVE INDEX(768px)     */
+
+  .photocontent {
+    margin-bottom: 100px;
+  }
+  .photocontent .info {
+    top: 40%;
+  }
+  .photocontent h1 {
+    font-size: 70px;
+  }
+
+  .content-1 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .index-photos,
+  .text-content1 {
+    width: 100%;
+  }
+
+  .parallax-content,
+  .parallax-content-1 {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .parallax-content-1 {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .stat {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .stats-photo {
+    display: none;
+  }
+
+  .stats-text {
+    margin-left: 120px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+
+  .stats-content {
+    height: auto;
+  }
+
+  .middle-content {
+    width: 90%;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .index-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .index-card {
+    width: 60%;
+  }
+  .index-card .text {
+    height: auto;
+  }
+  .index-card .text > button {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+  }
+
+  /*      RESPONSIVE BEACHES(768px)      */
+
+  .beachcontainer {
+    display: none;
+  }
+  .beach-hidden {
+    display: block;
+  }
+  .beach-text {
+    margin-top: 80px;
+  }
+  .beach-text h1 {
+    font-size: 40px;
+  }
+  .dest-bg {
+    background: url(./img/slideshow/16256-118729-f72734259_3xl.webp) no-repeat
+      center center/cover;
+  }
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .card {
+    width: 60%;
+  }
+  .card .text {
+    height: auto;
+  }
+  .card .text > button {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+  }
+  /*    RESPONSIVE FOOTER(768px)     */
+  #footer {
+    height: unset;
+    padding: 40px 0px 20px;
+    margin-top: 25px;
+  }
+
+  #footer .box {
+    width: calc(50% - 20px);
+  }
+
+  #footer .box * {
+    text-align: center;
+  }
+
+  .footer-container {
+    width: 90%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .copyright {
+    position: relative;
+    order: 9;
+  }
+  /*    RESPONSIVE DESTINATIONS(768px)    */
+
+  .rows {
+    height: auto;
+  }
+
+  .row {
+    width: 70%;
+    height: auto;
+  }
+
+  .row img {
+    display: block;
+    height: 350px;
+    object-fit: cover;
+  }
+  .row-overlay {
+    margin-top: 17px;
+  }
+
+  /*    RESPONSIVE ABOUT US(768px)   */
+  .about-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-text {
+    padding-top: 50px;
+    width: 70%;
+  }
+  .about-image {
+    width: 80%;
+  }
+  .about-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .image-container {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .image {
+    height: auto;
+    width: 100%;
+  }
+  /*    RESPONSIVE CONTACT(768px)    */
+  .form-container {
+    margin-top: 150px;
+  }
+  .form-inner-container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .contact-text {
+    width: 100%;
+  }
+
+  .contact-text h1 {
+    line-height: 1;
+  }
+
+  .form {
+    width: 100%;
+  }
+  #contact-form {
+    margin-top: 40px;
+  }
+  .map {
+    width: 90%;
+    margin-top: 50px;
   }
 }
-/*Smartphones*/
+
+/*       RESPONSIVE FOR SMARTPHONES        */
 @media (max-width: 500px) {
-}
-/*Tablet*/
-@media (min-width: 501px) and (max-width: 768px) {
+  /*    RESPONSIVE NAVBAR(500px)    */
+  .tabs {
+    gap: 6px;
+  }
+  .tab {
+    font-size: 18px;
+    padding: 2px 8px;
+    margin-top: 10px;
+  }
+  .logo a img {
+    width: 150px;
+    height: auto;
+  }
+  /*    RESPONSIVE INDEX(500px)    */
+
+  .container {
+    margin-top: 50px;
+  }
+  .photo {
+    width: 70%;
+  }
+
+  .parallax-content p,
+  .parallax-content-1 p {
+    width: 100%;
+  }
+  .index-card {
+    width: 80%;
+  }
+  /*    RESPONSIVE BEACHES(500px)    */
+  .beach-text h1 {
+    font-size: 28px;
+  }
+  .card {
+    width: 80%;
+  }
+
+  #destinations h1,
+  #about-us h1,
+  .photocontent h1 {
+    font-size: 50px;
+    line-height: 1;
+  }
+  /*    RESPONSIVE CONTACT(500px)    */
+  #contact-form {
+    width: 100%;
+  }
 }

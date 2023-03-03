@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="./scripts/slideshow-script.js" defer></script>
+    <link rel="icon" type="favicon" href="./favicon/favicon-32x32.png" />
     <title>Document</title>
   </head>
   <body>
@@ -27,6 +28,11 @@
         </div>
       </div>
     </header>
+    <div class="beach-hidden">
+      <div id="destinations" class="dest-bg">
+        <h1>Beaches</h1>
+      </div>
+    </div>
     <div class="beachcontainer">
       <div id="slideshow">
         <img
@@ -44,7 +50,7 @@
         <img src="./img/slideshow/agia paraskevi.jpg" class="slides" />
         <button class="prev" onclick="prevSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
-        <button id="play" onclick="playSlide()">Play</button>
+        <!--  <button id="play" onclick="playSlide()">Play</button>
         <button id="stop" onclick="stopSlide()">Stop</button>
         <label for="interval">Interval</label>
         <input
@@ -52,7 +58,7 @@
           id="interval"
           placeholder="Timer"
           onchange="changeValue()"
-        />
+        /> -->
         <div class="beach-info">
           <h1>Beaches</h1>
           <p>
@@ -75,10 +81,8 @@
         <span class="dot bg7" onclick="currentSlide(7)"></span>
       </div>
     </div>
-    <div class="container">
-      <div class="beach-text">
-        <h1>Most famous beaches in Skiathos</h1>
-      </div>
+    <div class="beach-text">
+      <h1>Most famous beaches in Skiathos</h1>
     </div>
     <div class="cardcontent">
       <main class="cards">

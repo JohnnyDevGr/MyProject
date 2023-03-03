@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="./scripts/contact-script.js" defer></script>
+    <link rel="icon" type="favicon" href="./favicon/favicon-32x32.png" />
     <title>Document</title>
   </head>
   <body>
@@ -38,23 +39,16 @@
         </div>
         <div class="form">
           <div id="contact-form">
-            <form onsubmit="return validateForm()">
-              <label for="fname">First Name</label>
+            <form onsubmit="return validateInputs()">
+              <!--  <form onsubmit="return validateForm()"> -->
+              <label for="fname">Full Name</label>
               <input
                 type="text"
                 id="fname"
-                name="firstname"
-                placeholder="Your name.."
+                name="fullname"
+                placeholder="Your first and last name.."
               />
-
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
-
+              <div class="error-hide hidden">*Your full name is required</div>
               <label for="email">Email</label>
               <input
                 type="text"
@@ -62,6 +56,7 @@
                 name="email"
                 placeholder="Your email.."
               />
+              <div class="error-hide hidden">*Your email is required</div>
 
               <label for="vemail">Verify Email</label>
               <input
@@ -70,6 +65,7 @@
                 name="vemail"
                 placeholder="Your email.."
               />
+              <div class="error-hide hidden">*Your email is required</div>
 
               <label for="phone">Phone</label>
               <input
@@ -78,6 +74,7 @@
                 name="phone"
                 placeholder="Your phone number.."
               />
+              <div class="error-hide hidden">*Your phone is required</div>
 
               <label for="address">Address</label>
               <input
@@ -86,6 +83,7 @@
                 name="address"
                 placeholder="Your address.."
               />
+              <div class="error-hide hidden">*Your address is required</div>
 
               <label for="comment">Comments</label>
               <textarea
@@ -94,13 +92,13 @@
                 placeholder="Write something.."
                 style="height: 200px"
               ></textarea>
-              <div id="submit-btn">
-                <p id="allgood"></p>
-              </div>
-              <input id="test" type="submit" value="Submit" />
+
+              <input id="submit" type="submit" value="Submit" />
             </form>
           </div>
         </div>
+
+        <div class="thank-you hidden">Thank you for your feedback.</div>
       </div>
     </div>
     <div class="mapcontainer">
